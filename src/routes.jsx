@@ -4,6 +4,7 @@ import { NotFound } from "./pages/NotFound";
 import { Home } from "./pages/Home";
 import { Recipes } from "./pages/Recipes";
 import { Categories } from "./pages/Categories";
+import { RecipeDetails } from "./pages/RecipeDetails";
 
 const router=createBrowserRouter([
     {
@@ -22,8 +23,11 @@ const router=createBrowserRouter([
             {
                 path:'catogories',
                 element:<Categories/>
+            },
+            {
+                path:'recipes/:id',
+                element:<RecipeDetails/>
             }
-
         ]
         
     }
