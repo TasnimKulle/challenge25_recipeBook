@@ -24,7 +24,7 @@ export const Categories = () => {
   }
 ];
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="max-w-3xl mx-auto mt-2">
         <div className="grid md:grid-cols-[300px,1fr] gap-6 mt-6" >
         <div className="bg-white rounded-lg shadow-md p-6">
             <h2 className="text-2xl font-bold mb-4">Categories</h2>

@@ -5,7 +5,7 @@ import { Home } from "./pages/Home";
 import { Recipes } from "./pages/Recipes";
 import { Categories } from "./pages/Categories";
 import { RecipeDetails } from "./pages/RecipeDetails";
-import { CategroyRecipes } from "./pages/CategroyRecipes";
+import { CategroyRecipes } from "./pages/CategroyRecipes"
 
 const router = createBrowserRouter([
   {
@@ -27,15 +27,16 @@ const router = createBrowserRouter([
         element: <RecipeDetails />,
       },
       {
-        path: "catogories",
+        path: "categories",
         element: <Categories />,
-        children: [
+        children:[
           {
-            path: ":categoryId",
-            element: <CategroyRecipes />,
-          },
-        ],
+            path:":categoryId",
+            element: <CategroyRecipes/>
+          }
+        ]
       },
+    
     ],
   },
 ]);

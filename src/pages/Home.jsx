@@ -15,7 +15,7 @@ export const Home = () => {
                    <p>Explore our collection of delicious recipes</p>
             </Link>
             <Link 
-            to='catogories'
+            to='categories'
             className="bg-rose-600 p-6 text-white rounded shadow"
             >
                       <h2 className="text-2xl font-bold mb-2">Recipe Categories</h2>

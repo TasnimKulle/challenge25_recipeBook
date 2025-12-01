@@ -17,7 +17,7 @@ function App() {
           className={({isActive})=>`hover:text-rose-700 ${isActive ? 'text-rose-600 font-bold':'text-gray-600 font-semibold'}`}
           >Recipes</NavLink>
           <NavLink 
-          to="catogories"
+          to="categories"
           className={({isActive})=>`hover:text-rose-700 ${isActive?'text-rose-600 font-bold':'text-gray-600 font-semibold'}`}
           >Categories</NavLink>
         </div>

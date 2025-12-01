@@ -35,11 +35,11 @@ const allRecipes = [
 
 export const CategroyRecipes = () => {
     const {categoryId}=useParams()
-    const recipes=allRecipes.filter(repice=>repice.category === categoryId)
+    const recipes=allRecipes.filter(repice=>repice.category === categoryId )
   return (
-    <div>
+    <div className="max-w-4xl mx-auto">
          <div className="bg-white rounded-lg shadow-md p-6">
-      <h2 className="text-3xl font-bold mb-6 capitalize"> {categoryId} Recipes</h2>
+      <h2 className="text-3xl font-bold mb-6 capitalize"> { categoryId } Recipes</h2>
       
       {recipes.length > 0 ? (
         <div className="grid gap-6">
